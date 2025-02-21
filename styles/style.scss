@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+body {
+    nav {
+        background-color: lightgreen;
+        position: sticky;
+        top: 0;
+        z-index: 5;
+        ul {
+            display: flex;
+            li {
+                list-style-type: none;
+                margin: 1rem;
+                font-size: 1.2rem;
+                font-weight: bold;
+                a {
+                    color: black;
+                    text-decoration: none;
+                    transition: all 0.1s ease;    //花0.1s的時間從黑色變為下面的青色
+                    &:hover {                     //當游標移到上方時，變換顏色
+                        color: rgb(54, 212, 138);
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        section.main-area {
+            min-height: 100vh;
+            background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            div.info{
+                flex-basis: 450px;
+                //border: 2px solid black;
+                padding: 1rem;
+                h1 {
+                font-size: 3.5rem;
+                }
+                h2 {
+                font-size: 1rem;
+                }
+            }
+
+            div.img-area {
+                flex-basis: 450px;
+                //border: 2px solid black;
+                img {
+                    width: 85%;
+                }
+            }
+        }
+
+        section.resume {
+            font-family: Arail, sans-serif;
+            max-width: 800px;
+            margin: auto; 
+            margin-bottom: 20px;
+            padding: 20px;
+            height: 100vh;
+            h1 {
+                text-align: center;
+                margin-top: 60px;
+            }
+            h2 {
+                border-bottom: 2px solid #333; 
+                padding-bottom: 5px;
+            }
+        }
+
+
+
+            section.acupoint-area{
+                display: flex;
+                width: 100%;
+                max-width: 900px;
+                background: white;
+                border-radius: 10px;
+                overflow: hidden;
+                div.acupoint-img{
+                    flex: 1;
+                    //border: 2px solid black;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover; 
+                    }
+                }
+                div.acupoint-info{
+                    flex: 1.5; /* 讓文字區塊佔 1.5 份 */
+                    padding: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    //border: 2px solid black;
+                    h3{
+                        margin-bottom: 10px;
+                        font-size: 20px;
+                    }
+                    p {
+                        font-size: 16px;
+                        line-height: 1.5;
+                    }
+                }
+
+                
+            }
+
+            section.job-exper{
+                display: flex;
+                flex-wrap: wrap;
+                // div{
+                //     //border:2px solid black;
+                // }
+            }
+    
+            section.profile {
+                h3 {
+                    font-size: 1.5rem;
+                }
+                p {
+                    margin: 0;
+                }
+            }
+    
+            section.activity {
+                display: flex;
+                width: 100%;
+                max-width: 900px;
+                border-radius: 10px;
+                overflow: hidden;
+                margin-bottom: 20px;
+                div.act1-img{
+                    flex: 1;
+                    
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover; 
+                    }
+                }
+                div.act1-text{
+                    flex: 1.5; /* 讓文字區塊佔 1.5 份 */
+                    padding: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    
+                    h2 {
+                        margin-bottom: 10px;
+                        font-size: 20px;
+                    }
+                    p {
+                        font-size: 16px;
+                        line-height: 1.5;
+                    }
+                    span{
+                        margin-top: 10px;
+                        font-size: 14px;
+                        color: gray;
+                    }
+                }
+            }
+        
+    }
+
+        
+}
+
+// @media screen and (max-width: 500px) {
+//     main{
+//         div.resume-section{
+//             section.acupoint-area{
+//                 div.acupoint-img{
+//                     img{
+//                         width: 100%;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

@@ -1,0 +1,158 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+body nav {
+  background-color: lightgreen;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+body nav ul {
+  display: flex;
+}
+body nav ul li {
+  list-style-type: none;
+  margin: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+body nav ul li a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.1s ease;
+}
+body nav ul li a:hover {
+  color: rgb(54, 212, 138);
+}
+body main section.main-area {
+  min-height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+body main section.main-area div.info {
+  flex-basis: 450px;
+  padding: 1rem;
+}
+body main section.main-area div.info h1 {
+  font-size: 3.5rem;
+}
+body main section.main-area div.info h2 {
+  font-size: 1rem;
+}
+body main section.main-area div.img-area {
+  flex-basis: 450px;
+}
+body main section.main-area div.img-area img {
+  width: 85%;
+}
+body main section.resume {
+  font-family: Arail, sans-serif;
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 20px;
+  height: 100vh;
+}
+body main section.resume h1 {
+  text-align: center;
+  margin-top: 60px;
+}
+body main section.resume h2 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+}
+body main section.acupoint-area {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+body main section.acupoint-area div.acupoint-img {
+  flex: 1;
+}
+body main section.acupoint-area div.acupoint-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main section.acupoint-area div.acupoint-info {
+  flex: 1.5; /* 讓文字區塊佔 1.5 份 */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body main section.acupoint-area div.acupoint-info h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+body main section.acupoint-area div.acupoint-info p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+body main section.job-exper {
+  display: flex;
+  flex-wrap: wrap;
+}
+body main section.profile h3 {
+  font-size: 1.5rem;
+}
+body main section.profile p {
+  margin: 0;
+}
+body main section.activity {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+body main section.activity div.act1-img {
+  flex: 1;
+}
+body main section.activity div.act1-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main section.activity div.act1-text {
+  flex: 1.5; /* 讓文字區塊佔 1.5 份 */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body main section.activity div.act1-text h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+body main section.activity div.act1-text p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+body main section.activity div.act1-text span {
+  margin-top: 10px;
+  font-size: 14px;
+  color: gray;
+}/*# sourceMappingURL=style.css.map */
