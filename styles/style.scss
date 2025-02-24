@@ -57,6 +57,20 @@ body {
                 h2 {
                 font-size: 1rem;
                 }
+                a {
+                    color: white;
+                    background-color: rgb(54,212,138);
+                    padding: 0.25rem 0.5rem;
+                    font-size: 1.5rem;
+                    border-radius: 20px;
+                    display: inline-block;
+                    margin-top: 0.25rem;
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                    &:hover {                     //當游標移到上方時，變換顏色
+                        transform: scale(1.2);
+                    }
+                }
             }
 
             div.img-area {
